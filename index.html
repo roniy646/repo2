@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Undangan Pernikahan Rony & Istri Komputer</title>
+
+    <!-- SEO -->
+    <meta name="description" content="Undangan pernikahan digital Rony & Istri Komputer. Sabtu, 15 Maret 2026">
+    <meta name="keywords" content="undangan pernikahan, undangan digital, wedding invitation">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Undangan Pernikahan Rony & Istri Komputer">
+    <meta property="og:description" content="Kami mengundang Anda untuk berbagi kebahagiaan di hari pernikahan kami">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1519741497674-611481863552?w=600">
+    <meta property="og:url" content="#">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- CSS UNDANGAN -->
+    <link rel="stylesheet" href="undangan.css">
+
+    <!-- QR Code -->
+    <script src="https://cdn.jsdelivr.net/npm/qrcode@1.5.3/build/qrcode.min.js"></script>
+</head>
+<body>
+
+    <!-- COVER -->
+    <div class="invitation-card show" id="coverCard">
+        <h1 class="title">UNDANGAN PERNIKAHAN</h1>
+
+        <div class="floral-decoration">
+            <i class="fas fa-heart"></i>
+        </div>
+
+        <h2 class="couple-names">
+            Rony <span class="ampersand">&</span> Istri Komputer
+        </h2>
+
+        <p class="message">
+            Dengan penuh rasa syukur dan bahagia, kami mengundang
+            Bapak/Ibu/Saudara/i untuk berbagi kebahagiaan di hari pernikahan kami.
+        </p>
+
+        <div class="details">
+            <div><i class="far fa-calendar-alt"></i> Sabtu, 15 Maret 2026</div>
+            <div><i class="far fa-clock"></i> 10.00 WIB - Selesai</div>
+            <div><i class="fas fa-map-marker-alt"></i> Venue Pernikahan Digital</div>
+        </div>
+
+        <button class="open-btn" id="openInvitation">
+            BUKA UNDANGAN <i class="fas fa-arrow-right"></i>
+        </button>
+
+        <p class="footer-note">
+            Merupakan suatu kehormatan dan kebahagiaan bagi kami apabila Anda berkenan hadir
+            memberikan doa restu.
+        </p>
+    </div>
+
+    <!-- FULL UNDANGAN -->
+    <div class="full-invitation" id="fullInvitation">
+        <div class="full-card">
+
+            <button class="btn-back" id="backButton">
+                <i class="fas fa-arrow-left"></i> Kembali
+            </button>
+
+            <h1 class="title">UNDANGAN PERNIKAHAN</h1>
+
+            <div class="floral-decoration">
+                <i class="fas fa-heart"></i>
+                <i class="fas fa-ring"></i>
+                <i class="fas fa-heart"></i>
+            </div>
+
+            <h2 class="couple-names">
+                Rony <span class="ampersand">&</span> Istri Komputer
+            </h2>
+
+            <!-- COUNTDOWN -->
+            <div class="countdown">
+                <div class="countdown-item">
+                    <div class="countdown-number" id="days">00</div>
+                    <div class="countdown-label">Hari</div>
+                </div>
+                <div class="countdown-item">
+                    <div class="countdown-number" id="hours">00</div>
+                    <div class="countdown-label">Jam</div>
+                </div>
+                <div class="countdown-item">
+                    <div class="countdown-number" id="minutes">00</div>
+                    <div class="countdown-label">Menit</div>
+                </div>
+                <div class="countdown-item">
+                    <div class="countdown-number" id="seconds">00</div>
+                    <div class="countdown-label">Detik</div>
+                </div>
+            </div>
+
+            <!-- DETAIL -->
+            <div class="section">
+                <h3 class="section-title"><i class="fas fa-info-circle"></i> Detail Acara</h3>
+                <div class="details">
+                    <div><i class="far fa-calendar-alt"></i> Sabtu, 15 Maret 2026</div>
+                    <div><i class="far fa-clock"></i> 10.00 WIB - Selesai</div>
+                    <div><i class="fas fa-map-marker-alt"></i> Live Streaming via Zoom</div>
+                </div>
+            </div>
+
+            <!-- QR -->
+            <div class="section">
+                <h3 class="section-title"><i class="fas fa-gift"></i> Amplop Digital</h3>
+                <div class="qrcode-container">
+                    <div id="qrcode"></div>
+                    <p>Bank BCA : 1234 5678 90<br>a.n Rony</p>
+                </div>
+            </div>
+
+            <!-- RSVP -->
+            <div class="rsvp-form">
+                <h3 class="section-title"><i class="fas fa-check-circle"></i> Konfirmasi Kehadiran</h3>
+
+                <div class="form-group">
+                    <label>Nama Lengkap</label>
+                    <input type="text" placeholder="Masukkan nama">
+                </div>
+
+                <div class="form-group">
+                    <label>No WhatsApp</label>
+                    <input type="tel" placeholder="08xxxxxxxxxx">
+                </div>
+
+                <div class="form-group">
+                    <label>Kehadiran</label>
+                    <select>
+                        <option value="">Pilih</option>
+                        <option>Hadir</option>
+                        <option>Tidak Hadir</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>Ucapan</label>
+                    <textarea rows="3" placeholder="Ucapan dan doa"></textarea>
+                </div>
+
+                <button class="btn-submit">
+                    <i class="fas fa-paper-plane"></i> Kirim
+                </button>
+            </div>
+
+            <div class="footer-note" style="text-align:center;margin-top:30px;">
+                <p><strong>QS. Ar-Rum : 21</strong></p>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- SHARE -->
+    <button class="share-button">
+        <i class="fas fa-share-alt"></i> Bagikan
+    </button>
+
+    <!-- SCRIPT -->
+    <script src="script.js"></script>
+</body>
+</html>
